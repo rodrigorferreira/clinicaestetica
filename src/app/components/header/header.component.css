@@ -1,0 +1,31 @@
+/* header.component.css */
+
+.logo {
+  height: 100px; /* Ajuste o tamanho da logo conforme necessário */
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 5px 0; /* Adiciona padding para ajustar o alinhamento */
+}
+
+.navbar {
+  padding: 0; /* Remove o padding padrão do navbar */
+  height: 80px; /* Define uma altura fixa para o navbar */
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: bold;
+  line-height: 80px; /* Ajusta o alinhamento vertical dos links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FF6EC1;
+}
+
+.navbar a {
+  color: #a20067;
+}

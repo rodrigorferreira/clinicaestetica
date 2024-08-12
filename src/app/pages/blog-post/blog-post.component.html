@@ -1,0 +1,6 @@
+<!-- blog-post.component.html -->
+<article *ngIf="post">
+  <img [src]="post.imageUrl" alt="{{ post.title }}" class="post-image">
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.content }}</p>
+</article>

@@ -1,0 +1,23 @@
+/* footer.component.css */
+
+footer {
+  background-color: #E5369A;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FF6EC1;
+}

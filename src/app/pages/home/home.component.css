@@ -1,0 +1,163 @@
+/* home.component.css */
+
+.hero {
+  background-image: url('/assets/images/hero-bg.webp');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.hero-text h1 {
+  color: #F79ED1;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about, .services, .testimonials, .contact {
+  padding: 60px 0;
+}
+
+.about h2, .services h2, .testimonials h2, .contact h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.about p {
+  color: #ce2686;
+}
+
+.about h2 {
+  color: #a20067;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+}
+
+.service-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-item h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #E5369A;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.testimonial-item {
+  background-color: #F79ED1;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  max-width: 500px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials h2 {
+  color: #a20067;
+}
+
+.testimonial-item p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.testimonial-item h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.contact {
+  background-color: #F450AE;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.contact button {
+  font-size: 18px;
+}
