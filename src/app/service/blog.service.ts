@@ -26,7 +26,7 @@ export class BlogService {
         <p>Na Clínica de Estética, oferecemos uma gama completa de tratamentos faciais, desde a limpeza de pele profunda, que remove impurezas e células mortas, até terapias avançadas como peelings químicos e microagulhamento, que estimulam a renovação celular e a produção de colágeno.</p>
         <p>Cada sessão é personalizada de acordo com as necessidades individuais de sua pele, utilizando produtos de alta qualidade e técnicas modernas. Agende uma consulta conosco para descobrir qual tratamento facial é ideal para você e sinta a transformação em sua pele!</p>
       `,
-      imageUrl: 'assets/images/tratamento-facial.jpg',
+      imageUrl: 'assets/images/blog-facial.jpeg',
       date: new Date('2023-08-20T14:30:00') // Data de publicação
     },
 
@@ -65,7 +65,7 @@ export class BlogService {
 
   <p>Aproveite o verão ao máximo sem descuidar da sua beleza. Com essas dicas, você estará pronta para curtir a estação com confiança e estilo!</p>
 `,
-      imageUrl: 'assets/images/tratamento-corporal.jpg',
+      imageUrl: 'assets/images/blog-dicasverao.jpeg',
       date: new Date('2023-08-20T14:30:00') // Data de publicação
     },
 
@@ -114,7 +114,7 @@ export class BlogService {
 
   <p>Se você está cansado dos métodos tradicionais de remoção de pelos e quer uma solução mais duradoura, a depilação a laser pode ser a escolha certa para você. Agende uma consulta em nossa clínica e descubra como podemos ajudá-lo a alcançar a pele lisa e sem pelos que você sempre desejou!</p>
 `,
-      imageUrl: 'assets/images/depilacao-laser.jpg',
+      imageUrl: 'assets/images/blog-depilacao.jpeg',
       date: new Date('2023-08-20T14:30:00') // Data de publicação
     }
   ];
