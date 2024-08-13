@@ -4,7 +4,7 @@
   background-image: url('/assets/images/hero-bg.webp');
   background-size: cover;
   background-position: center;
-  height: 600px;
+  min-height: 500px; /* Reduzido para telas menores */
   display: flex;
   justify-content: center;
   align-items: center;

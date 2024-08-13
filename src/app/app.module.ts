@@ -10,6 +10,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { BlogPostComponent } from './pages/blog-post/blog-post.component';
+import { BlogService } from './service/blog.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { BlogPostComponent } from './pages/blog-post/blog-post.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

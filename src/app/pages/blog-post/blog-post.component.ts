@@ -1,7 +1,7 @@
 // blog-post.component.ts
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { BlogComponent } from '../blog/blog.component';
+import { ActivatedRoute, Router } from '@angular/router';
+import { BlogService } from '../../service/blog.service'; // Verifique o caminho correto para o serviço
 
 @Component({
   selector: 'app-blog-post',
@@ -11,19 +11,24 @@ import { BlogComponent } from '../blog/blog.component';
 export class BlogPostComponent implements OnInit {
   post: any;
 
-  constructor(private route: ActivatedRoute, private blogComponent: BlogComponent) {}
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private blogService: BlogService // Injeção do BlogService
+  ) {}
 
   ngOnInit(): void {
-    // Obtendo o ID da URL, com tratamento para null
-    const postId = +(this.route.snapshot.paramMap.get('id') ?? 0); // Usa 0 como fallback se for null
-    this.post = this.blogComponent.posts.find(p => p.id === postId);
+    const postId = +(this.route.snapshot.paramMap.get('id') ?? 0);
+    this.post = this.blogService.getPostById(postId);
 
-    // Alternativamente, você pode verificar explicitamente:
-    if (postId) {
-      this.post = this.blogComponent.posts.find(p => p.id === postId);
-    } else {
-      // Lida com o caso onde o ID é inválido ou não encontrado
-      console.error('ID inválido');
+    if (!this.post) {
+      console.error('Post não encontrado!');
     }
   }
+
+  // Método para voltar à página anterior
+  goBack() {
+    this.router.navigate(['/blog']);
+  }
 }
+

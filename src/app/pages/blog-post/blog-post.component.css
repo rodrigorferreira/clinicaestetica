@@ -1,5 +1,26 @@
 /* blog-post.component.css */
 
+.blog-post-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.blog-post-container h1 {
+  font-size: 36px;
+  color: #A20067;
+  margin-bottom: 20px;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
 .post-image {
   width: 100%;
   max-height: 400px;
@@ -8,17 +29,36 @@
   margin-bottom: 20px;
 }
 
-article {
-  padding: 20px;
-}
-
-article h1 {
-  font-size: 28px;
-  color: #E5369A;
-}
-
-article p {
+.post-content {
   font-size: 18px;
   line-height: 1.6;
   color: #333;
+}
+
+.post-content p {
+  margin-bottom: 20px;
+}
+
+/* Estilo do Botão Voltar */
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #A20067;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #820050;
+}
+
+.back-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(162, 0, 103, 0.3);
 }

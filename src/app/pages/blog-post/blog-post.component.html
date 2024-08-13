@@ -1,6 +1,12 @@
 <!-- blog-post.component.html -->
-<article *ngIf="post">
-  <img [src]="post.imageUrl" alt="{{ post.title }}" class="post-image">
+<article class="blog-post-container">
   <h1>{{ post.title }}</h1>
-  <p>{{ post.content }}</p>
+  <div class="post-meta">
+    <span>Publicado em {{ post.date | date:'longDate' }} às {{ post.date | date:'shortTime' }}</span>
+  </div>
+  <img [src]="post.imageUrl" alt="{{ post.title }}" class="post-image">
+  <section class="post-content" [innerHTML]="post.content"></section>
+
+  <!-- Botão Voltar -->
+  <button class="back-button" (click)="goBack()">Voltar</button>
 </article>

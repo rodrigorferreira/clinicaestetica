@@ -1,31 +1,35 @@
 /* header.component.css */
 
 .logo {
-  height: 100px; /* Ajuste o tamanho da logo conforme necessário */
+  height: 60px; /* Reduz o tamanho da logo para telas menores */
   margin-right: 10px;
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
-  padding: 5px 0; /* Adiciona padding para ajustar o alinhamento */
+  padding: 5px 0;
 }
 
 .navbar {
-  padding: 0; /* Remove o padding padrão do navbar */
-  height: 80px; /* Define uma altura fixa para o navbar */
+  padding: 0 20px; /* Adiciona padding horizontal */
 }
 
 .navbar-nav .nav-link {
   color: #333;
   font-weight: bold;
-  line-height: 80px; /* Ajusta o alinhamento vertical dos links */
+  padding: 15px 10px; /* Ajusta padding para espaçamento interno */
+  line-height: 1.5; /* Ajusta a altura da linha para um layout mais fluido */
 }
 
 .navbar-nav .nav-link:hover {
   color: #FF6EC1;
 }
 
-.navbar a {
-  color: #a20067;
+.navbar-toggler {
+  border-color: #FF6EC1;
+}
+
+.navbar-toggler-icon {
+  background-color: #FF6EC1;
 }
